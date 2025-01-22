@@ -1,0 +1,9 @@
+query {
+  customers(where: "firstName=\"Jennifer\"", sort: "id asc") {
+    results {
+      firstName
+      lastName
+      email
+    }
+  }
+}
