@@ -3,21 +3,21 @@ import { cartCreate } from './cartCreate';
 
 const lineItemDraft = [
   {
-    key: 'line-item-1',
+    key: 'line-item-2',
     productId: '2ffa52c9-3433-481e-93b5-37c182aa92c5',
     variantId: 1,
     // sku: 'GMCT-01',
     quantity: 1,
     externalPrice: {
-      currencyCode: 'AUD',
+      currencyCode: 'USD',
       centAmount: 4200,
     },
   },
 ]; // For Product Variant identification, either the productId and variantId, or sku must be provided.
 
 const cartDraft = {
-  key: 'cart-1-au',
-  currency: 'AUD',
+  key: 'cart-1-usd',
+  currency: 'USD',
   customerId: '57338659-20dc-4094-b7df-e112725d5a7b', //dummy mason smith
   customerEmail: 'mason-smith@email.com',
   // customerGroup: {
@@ -27,7 +27,7 @@ const cartDraft = {
   lineItems: lineItemDraft,
   inventoryMode: 'ReserveOnOrder',
   taxMode: 'External',
-  country: 'AU',
+  country: 'US',
   locale: 'en-US',
 };
 

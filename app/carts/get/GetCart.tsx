@@ -2,10 +2,10 @@ import React from 'react';
 import { cartGet } from './cartGet';
 
 const GetCart = async () => {
-  const cartId = '929e80ff-dc20-4f98-8c18-296e08d886cc';
+  const cartId = '511fe90e-8182-4acb-9491-991b398aadaf';
   const response = (await cartGet('id', cartId))?.body;
 
-  const cartKey = 'sebastian-franklin-01';
+  const cartKey = 'cart-1-au';
   const keyResponse = (await cartGet('key', cartKey))?.body;
 
   const cartCustomerId = '57338659-20dc-4094-b7df-e112725d5a7b';
